@@ -5,6 +5,12 @@ alwaysApply: true
 
 # Projektkontext: case-journal och troubleshooting-log
 
+## Vid start i ett nytt projekt (viktigt)
+
+- **Först:** Kolla om **case-journal.md** eller **troubleshooting-log.md** finns i projektet (root eller `docs/`).
+- **Om ingen av filerna finns:** Fråga användaren innan du sätter igång med annat: *"Jag ser att det inte finns någon case-journal.md eller troubleshooting-log.md i det här projektet. Vill du köra en fork av project-templates-repot (https://github.com/Ridvan-bot/project-templates) och lägga in rätt mall innan vi sätter igång?"* Vänta på svar – om användaren vill forka, hjälp till med det; om inte, gå vidare med användarens övriga fråga.
+- **Om minst en fil finns:** Fortsätt enligt "I början av arbete" nedan.
+
 ## Vilka filer
 
 - **case-journal.md** – används när projektet handlar om att **sätta upp nya saker, uppgraderingar eller ändringar i en fungerande miljö**. Innehåll: miljö, mål, planerade ändringar, genomfört, status, nästa steg.

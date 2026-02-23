@@ -48,4 +48,4 @@ Use this when you want a dedicated template repo (e.g. `project-templates` or `c
 
 3. **When starting a new project:** Fork the template repo (or use "Use this template" on GitHub), then clone the fork as your new project. Add the template file you need (case-journal or troubleshooting-log) to the project root or `docs/`, and ensure the Cursor rule is in the project’s `.cursor/rules/` or in your global rules.
 
-4. **Optional – global rule:** To have the same behaviour in every project without copying the rule each time, copy `context-and-journal.mdc` to `~/.cursor/rules/`. The LLM will then look for `case-journal.md` and `troubleshooting-log.md` in whatever project you have open.
+4. **Recommended – global rule:** Copy `context-and-journal.mdc` to `~/.cursor/rules/`. Then in **any** project (including new folders where no templates exist yet), the LLM will: (1) check for `case-journal.md` or `troubleshooting-log.md`; (2) if neither exists, ask if you want to fork the project-templates repo before continuing; (3) if at least one exists, read it for context and suggest updates as work progresses.
